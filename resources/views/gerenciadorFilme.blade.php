@@ -8,7 +8,7 @@
   <div class="mb-3 row">
     <label for="inputPesquisar" class="col-sm-2 col-form-label">Pesquisar:</label>
     <div class="col-sm-8">
-      <input type="text" class="form-control" name="nomefilme" id="inputPesquisar" placeholder="Digite o nome do funcionário" >
+      <input type="text" class="form-control" name="nomefilme" id="inputPesquisar" placeholder="Digite o nome do filme" >
     </div>
     <div class="col-sm-2"> <button type="submit" class="btn btn-outline-primary">Pesquisar</button> </div>
   </div>

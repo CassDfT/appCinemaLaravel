@@ -1,0 +1,93 @@
+.login{
+    margin: 5rem auto;
+    align-items: center;
+    border: solid black 1px;
+    border-radius: 250px;
+    width: 40%;
+    padding: 5rem;
+    background-color: rgb(148, 148, 148);
+    color: white;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    background-color: gray;
+    color: white;
+    width: 20%;
+    border-radius: 10px;
+}
+
+.col img{
+    border-radius: 10px;
+}
+
+.compra{
+    width: 30%;
+}
+
+.compra img{
+    border-radius: 25px;
+}
+
+.texto-compra{
+    width: 60%;
+    color: white;
+    text-align: justify;
+}
+
+h2{
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(100, 100, 100);
+    width: 90%;
+    height: 100%;
+    border: solid black;
+    border-radius: 25px;
+    margin: auto;
+    padding: 5%;
+}
+
+.infos1{
+    color: rgb(184, 184, 184);
+}
+
+.infos2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.col{
+    flex-wrap: wrap;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .col{
+        flex-wrap: nowrap;
+        width: 50%;
+    }   
+    
+}
+
+@media screen and (max-width: 800px) {
+    .col{
+        flex-wrap: nowrap;
+        width: 100%;
+    }   
+    
+}

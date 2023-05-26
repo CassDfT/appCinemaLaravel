@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\filmeController;
 use App\Http\Controllers\funcionarioController;
 use App\Http\Controllers\poltronaController;
+use App\Http\Controllers\cinemaController;
+use App\Http\Controllers\logarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,6 +21,22 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/cinema', function () {
+    return view('cinema');
+})->name('cinema');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('/compra', function () {
+    return view('compra');
+})->name('compra');
+
+Route::get('/cadastro', function () {
+    return view('cadastro');
+})->name('cadastro');
+
 Route::get('/cadastro-filme',[filmeController::class,'buscaCadastroFilme'])->name('buscar-cadastro-filme');
 Route::post('/cadastro-filme',[filmeController::class,'cadastrarFilme'])->name('cadastro-filme');
 Route::get('/gerenciar-filme',[filmeController::class,'MostrarGerenciadorFilme'])->name('gerenciar-filme');
@@ -30,6 +48,11 @@ Route::post('/cadastro-funcionario',[funcionarioController::class,'cadastrarFunc
 Route::get('/gerenciar-funcionario',[funcionarioController::class,'MostrarGerenciadorFuncionario'])->name('gerenciar-funcionario');
 Route::get('/alterar-funcionario/{registrosFuncionarios}',[funcionarioController::class,'MostrarRegistrosFuncionario'])->name('mostrar-funcionario');
 Route::put('/gerenciar-funcionario/{registrosFuncionarios}',[funcionarioController::class,'AlterarBancoFuncionario'])->name('alterar-banco-funcionario');
+
+Route::get('/cinema/{homeCinema}',[cinemaController::class, 'MostrarCinema']) ->name('cinema-home');
+
+//cliente 
+Route::get('/login-user',[logarController::class,'logar'])->name('login-user');
 
 
 //Poltrona
