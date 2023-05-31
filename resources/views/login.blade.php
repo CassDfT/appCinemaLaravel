@@ -15,7 +15,7 @@
                     </div>
                     <div class="botoes">
                         <button type="submit" class="btn btn-primary">Entrar</button>
-                        <a href="cadastro.html">Não sou possui cadastro?</a>
+                        <a href="{{'/cadastro-user'}}">Não sou possui cadastro?</a>
                     </div>  
                 </form>
             </div>

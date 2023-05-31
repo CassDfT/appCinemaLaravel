@@ -11,12 +11,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <nav class="navbar text-bg-dark p-2" style= "width:100%;" >
           <div class="container justify-content-center">
-              <a class="navbar-brand text-light" href="{{url('/cinema')}}">
+              <a class="navbar-brand text-light" href="{{url('/')}}">
                   <img src="Imagens/filme.png" alt="Bootstrap" width="50" height="44">CineStrap
               </a>
               <ul class="nav nav-tabs ">
                   <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="{{url('/cinema')}}">Home</a>
+                      <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link text-white" href="{{'/login-user'}}">Login</a>

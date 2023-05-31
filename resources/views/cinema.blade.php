@@ -61,13 +61,14 @@ if($mysqli->error){
               </div>
               <hr>
               <h1>Filmes em cartaz</h1>
-              <div class="container text-center">
-                <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+              
                 <?php
   // Verifica se encontrou resultados
   if (mysqli_num_rows($resultado) > 0) {
     while ($filme = mysqli_fetch_assoc($resultado)) {
 ?>
+        <div class="container text-center">
+                <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
                   <div class="col">
                     <div class="p-3"><img src="<?php echo $filme['capafilme'];?>" class="img-fluid rounded-start" alt="..."></div>
                   </div>
@@ -76,7 +77,7 @@ if($mysqli->error){
               <?php
     }
   } else {
-    echo "Nenhum livro encontrado.";
+    echo "Nenhum filme encontrado.";
   }
 
   mysqli_close($conexao);

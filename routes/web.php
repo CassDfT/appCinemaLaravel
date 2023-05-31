@@ -6,6 +6,7 @@ use App\Http\Controllers\funcionarioController;
 use App\Http\Controllers\poltronaController;
 use App\Http\Controllers\cinemaController;
 use App\Http\Controllers\logarController;
+use App\Http\Controllers\cadastroController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,12 +19,12 @@ use App\Http\Controllers\logarController;
 */
 
 Route::get('/', function () {
-    return view('home');
-})->name('home');
-
-Route::get('/cinema', function () {
     return view('cinema');
 })->name('cinema');
+
+// Route::get('/cinema', function () {
+//     return view('cinema');
+// })->name('cinema');
 
 Route::get('/login', function () {
     return view('login');
@@ -53,7 +54,7 @@ Route::get('/cinema/{homeCinema}',[cinemaController::class, 'MostrarCinema']) ->
 
 //cliente 
 Route::get('/login-user',[logarController::class,'logar'])->name('login-user');
-
+Route::get('/cadastro-user',[cadastroController::class,'cadastro'])->name('cadastro-user');
 
 //Poltrona
 
